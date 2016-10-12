@@ -5,8 +5,10 @@ b = "42"
 
 begin
    a + b
-ensure
-   puts "Could not add variables a (#{a.class}) and b (#{b.class})"
+rescue
+	puts "Error"
 else
    puts "a + b is #{a + b}"
+ensure
+   puts "Could not add variables a (#{a.class}) and b (#{b.class})"
 end
